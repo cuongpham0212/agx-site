@@ -1,10 +1,13 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "AGX Site"
+title = "AGX v3"
 enableRobotsTXT = true
+paginate = 12
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS"]
 
-[params]
-  description = "AGX multi-site master"
+[minify]
+  disableXML = true
+  disableCSS = false
+  disableJS = false

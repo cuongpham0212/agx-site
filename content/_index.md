@@ -1,6 +1,7 @@
 ---
-title: "AGX Home"
+title: "AGX v3 Home"
+description: "Welcome to AGX multi-site architecture"
 ---
 
-# Chào mừng bạn đến AlbumGaiXinh!
-Site đã hoạt động.
+# AGX v3
+Site đang chạy thành công trên Hugo + Netlify.
