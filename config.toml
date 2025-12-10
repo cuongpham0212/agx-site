@@ -1,0 +1,11 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "AGX Site"
+theme = ""
+enableRobotsTXT = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  description = "AGX multi-site master"
