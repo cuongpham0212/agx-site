@@ -1,13 +1,21 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "AGX v3"
+title = "AGX Site"
 enableRobotsTXT = true
-paginate = 12
+
+# Disable default Hugo taxonomy (we don't use them now)
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+# Pagination (new syntax)
+[pagination]
+  pagerSize = 12
 
 [outputs]
   home = ["HTML", "RSS"]
 
 [minify]
   disableXML = true
-  disableCSS = false
-  disableJS = false
+
+[module]
+  [[module.imports]]
+    path = "github.com/cuongpham0212/agx-mobile-theme"

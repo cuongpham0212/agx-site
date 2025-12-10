@@ -1,3 +1,13 @@
+{{/* Try to detect mobile from header (only works on server / Netlify) */}}
+{{ $ua := "" }}
+{{ with .Site.Params.userAgent }}{{ $ua = . }}{{ end }}
+
+{{ $isMobile := or (in $ua "Mobile") (in $ua "Android") }}
+
+{{ if and $isMobile (ne $ua "") }}
+    {{ block "mobile_base" . }}{{ end }}
+{{ else }}
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -14,3 +24,5 @@
     {{ partial "footer.html" . }}
 </body>
 </html>
+
+{{ end }}
